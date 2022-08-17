@@ -4,6 +4,7 @@ const mobileOverlay = document.querySelector('.mobile-overlay');
 
 
 
+
 const collapsedSidebar = (btn)=>{
     let event = btn.classList.contains('event');
        
@@ -37,11 +38,10 @@ const collapsedMenus = (collapsedMenu)=>{
 
 hamburgerMenu.addEventListener('click', ()=>{
     collapsedSidebar(hamburgerMenu);
-})
+});
 
-collapsedMenusButtons.forEach(collapsedMenu => {
-    collapsedMenu.addEventListener('click',()=>{
+collapsedMenusButtons.forEach(collapsedMenu =>{
+    collapsedMenu.addEventListener('click', ()=>{
         collapsedMenus(collapsedMenu);
     });
 });
-
