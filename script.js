@@ -4,7 +4,7 @@ const mobileOverlay = document.querySelector('.mobile-overlay');
 
 
 
-
+// open sidebar with the hamburger menu button
 const collapsedSidebar = (btn)=>{
     let event = btn.classList.contains('event');
        
@@ -25,6 +25,7 @@ const collapsedSidebar = (btn)=>{
     }
 }
 
+// open collapsed menus within the sidebar
 const collapsedMenus = (collapsedMenu)=>{
     let event = collapsedMenu.classList.contains('event');
         if (!event) {
